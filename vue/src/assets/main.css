@@ -1,0 +1,97 @@
+:root {
+    --highlight: #000000;
+    --button: #04724D;
+    --buttonHover: #035f41fd;
+    --text: #F4F4F9;
+    --background: #6C91C2;
+    --backgroundActiveHover: #4272b1;
+    --component: #373F47;
+    --emergency: #a8261d;
+    --emergencyHover: #8a1a11;
+    --disabled: #3c3f42;
+    --cancel: rgb(235, 129, 42);
+    --cancelHover: rgba(196, 97, 16);
+
+    --contentFont: verdana,"Tisa Sans Pro", "Times New Roman",sans-serif;
+    --headerFont: "Arvo","Times New Roman",sans-serif;
+}
+
+.component{
+    background-color: var(--component);
+    color: var(--text);
+    padding: 2rem;
+    margin: 2rem auto 0 auto;
+    border-radius: 2rem;
+    border: solid var(--highlight);
+    max-width: min(75rem, 90%);
+}
+
+
+
+body {
+    background-image: url("../assets/frontPage_opaque.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.btn-secondary{
+    background-color: var(--background) !important;
+}
+.btn-secondary.active,
+.btn-secondary:active,
+.btn-secondary.hover,
+.btn-secondary:hover {
+    background-color: var(--backgroundActiveHover) !important;
+}
+.submitBtn
+{
+    background-color: var(--button) !important;
+    border: solid var(--highlight) 1px !important;
+    color: var(--text) !important;
+}
+.submitBtn.hover,
+.submitBtn:hover {
+    background-color: var(--buttonHover) !important;
+    border: solid var(--highlight) 1px !important;
+    color: var(--text) !important;
+}
+.disabledBtn{
+    background-color: var(--disabled) !important;
+    border: solid var(--highlight) 1px !important;
+    color: var(--text) !important;
+}
+.cancelBtn{
+    background-color: var(--emergency) !important;
+    border: solid var(--highlight) 1px !important;
+    color: var(--text) !important;
+}
+.cancelBtn.hover,
+.cancelBtn:hover {
+    background-color: var(--emergencyHover) !important;
+    border: solid var(--highlight) 1px !important;
+    color: var(--text) !important;
+}
+.editBtn {
+    background-color: var(--cancel) !important;
+    border: solid var(--highlight) 1px !important;
+    color: var(--text) !important;
+}
+.editBtn.hover,
+.editBtn:hover {
+    background-color: var(--cancelHover) !important;
+    border: solid var(--highlight) 1px !important;
+    color: var(--text) !important;
+}
+
+.goBackBtn{
+    background-color: var(--background) !important;
+    border: solid var(--highlight) 1px !important;
+    color: var(--text) !important;
+}
+
+.commentField {
+    height: 8rem !important;
+  }
